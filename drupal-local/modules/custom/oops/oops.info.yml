@@ -1,0 +1,5 @@
+name: School management system
+type: module
+description: School management system
+core: 8.x
+package: Custom

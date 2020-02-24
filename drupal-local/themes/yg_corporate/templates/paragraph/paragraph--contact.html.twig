@@ -1,0 +1,38 @@
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6 m-15px-tb">
+        <!-- Contact Form -->
+          <div class="contact-form box-shadow">
+            <h2 class="font-alt m-0px m-20px-b">
+              {{content.field_title.0}}
+            </h2>
+              {{content.field_contact_form}}
+          </div>
+        <!-- / -->
+      </div>
+      <div class="col-md-6 m-15px-tb">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="contact-info box-shadow">
+                <i class="theme-color ti-location-pin"></i>
+                <h6>{{content.field_address_title.0}}</h6>
+                <p>{{content.field_company_address.0}}</p>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-12 m-15px-tb">
+              <div class="contact-info box-shadow">
+                <i class="theme-color ti-mobile"></i>
+                <h6>{{content.field_call_us_title.0}}</h6>
+                <p><a href="tel:{{content.field_telephone_no.0}}">
+                  {{content.field_telephone_no.0}}
+                </a></p>
+                <p><a href="mailto:{{content.field_company_email.0}}">
+                  {{content.field_company_email.0}}</a>
+                </p>
+              </div>
+            </div>
+        </div>    
+    </div>
+  </div>
+</section>

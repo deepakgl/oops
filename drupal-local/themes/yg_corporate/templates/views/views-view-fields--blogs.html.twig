@@ -1,0 +1,26 @@
+
+<div class="col-md-4 col-sm-6 col-xs-6 fw600">
+    <div class="post-box">
+        <div class="post-img">
+            <a href="{{fields.view_node.content}}">
+                <img src="{{fields.field_image.content}}" alt="blog image">
+            </a>
+        </div>
+        <div class="blog-box-content">
+            <ul class="post-bar">
+                <li>{{fields.uid.content}}</li>
+                <li>{{fields.created.content}}</li>
+                <li>{{fields.comment_count.content}} Comments</li>
+            </ul>
+            <h3 class="post-title">
+                <a href="{{fields.view_node.content}}">
+                    {{fields.title.content}}
+                </a>
+            </h3>
+            <p class="post-description">
+                {{fields.body.content}}
+            </p>
+            <a class="btn" href="{{fields.view_node.content}}">Read More</a>
+        </div>
+    </div>
+</div>

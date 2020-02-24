@@ -1,0 +1,25 @@
+
+# Book Now Section
+book_now_title: 'Fusce quis ipsum Eget arcu imperdiet'
+book_now_link_title: 'BUY NOW'
+book_now_link_url: '#'
+
+# Footer Section
+facebook: 'https://www.facebook.com'
+twitter: 'https://www.twitter.com'
+instagram: 'https://www.instagram.com'
+codepen: 'https://codepen.io'
+github: 'https://github.com'
+skype: 'https://www.skype.com'
+
+#Theme Section
+main_color: '#f9520B'
+
+#banner Section For User pages and Not found pages
+banner_image: 'themes/yg_corporate/top-banner.jpg'
+
+
+
+
+
+

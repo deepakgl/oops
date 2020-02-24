@@ -1,0 +1,32 @@
+{{content.field_banner}}
+<!-- Start Blog Detail -->
+<section class="blog-area blog-sidebar-area blog-single-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="blog-single-img">
+                     {{content.field_image}}
+                </div>
+                <div class="time-date">
+                    <ul>
+                        <li><i class="fa fa-user" aria-hidden="true"></i>
+                          {{ node.Owner.name.value }}
+                        </li>
+                        <li><i class="fa fa-calendar" aria-hidden="true"></i>
+                          {{ node.created.value|date("F d,Y")  }}</li>
+                        <li>
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>{{comment_count}} comments</li>
+                    </ul>
+                </div>
+                <div class="blog-content">
+                    <h2>{{ node.title.value }}</h2>
+                    {{ content.body }}
+                </div>
+                {{ content.comment }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Detail -->
+
+

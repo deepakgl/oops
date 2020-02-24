@@ -1,0 +1,23 @@
+<!-- Start Contact Section -->
+<section class="bg-no-repeat bg-cover bg-fixed" 
+          style="background-image: url({{file_url(content.field_background_image['#items'].entity.uri.value)}});">
+    <div class="row no-gutters justify-content-end">
+    <div class="col-12 col-md-12 col-lg-6">
+    </div>
+      <div class="col-12 col-md-12 col-lg-6 contact-bg-res">
+        <div class="call-to-action theme-bg">
+          <h2>{{content.field_title.0}}</h2>
+          <p>{{content.field_description.0}}</p>
+          <div class="m-btn-bar">
+            <a href="{{content.field_link.0['#url']}}" class="btn m-btn-white">
+              {{content.field_link.0['#title']}}
+            </a>
+            <a href="tel:{{content.field_telephone_no.0}}" class="contact-num">
+              {{content.field_telephone_no.0}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Contact Section -->

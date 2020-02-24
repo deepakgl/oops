@@ -1,0 +1,24 @@
+
+{% set topics = fields.field_project_categories.content|split(',') %}
+{% set topics = topics|merge({'b': 'col-md-4 col-sm-6 col-xs-12 categories'}) %}
+
+<div {{ attributes.addClass(topics) }} >
+  <div class="portfolio-item wow fadeInUp">
+      <img src="{{fields.field_image.content}}" width="200px" alt="">
+      <div class="portfolio-overlay">
+        <div class="portfolio-info middle"><p class="wow fadeInUp"></p>
+          <h4><a href="{{fields.view_node.content}}">
+          			{{fields.title.content}}</a>
+          		</h4>
+          <ul class="icon">
+              <li>
+                  <a href="{{fields.field_image.content}}" class="portfolio-popup">
+                      <i class="fa fa-search"></i>
+                  </a>
+              </li>
+              <li><a href="{{fields.view_node.content}}"s class="fa fa-link"></a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>

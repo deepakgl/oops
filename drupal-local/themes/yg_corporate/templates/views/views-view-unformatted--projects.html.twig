@@ -1,0 +1,12 @@
+
+<!-- PORTFOLIO SECTION -->  
+  <section id="portfolio" class="text-center">
+          {{ render_block('views_block__project_tags_block_1') }}
+          <div class="portfolioContainer">
+              {% for row in rows %}
+                {{ row.content }}
+              {% endfor %}
+              
+          </div>
+  </section>  
+<!--  END PORTFOLIO SECTION -->

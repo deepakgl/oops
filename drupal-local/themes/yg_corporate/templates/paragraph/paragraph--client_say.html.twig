@@ -1,0 +1,17 @@
+<div class="col-lg-6">
+    <div class="test-inner ">
+       <div class="test-author-thumb d-flex">
+           <img src="{{ file_url(content.field_client_image['#items'].entity.uri.value)}}"
+             class="img-fluid" 
+             alt="{{ content.field_client_image['#items'].alt }}" 
+             title="{{ content.field_client_image['#items'].title }}">
+           <div class="test-author-info">
+               <h4>{{content.field_client_name.0}}</h4>
+               <h6>{{content.field_business_name.0}}</h6>
+           </div>
+       </div>
+
+        <p>{{content.field_client_said.0}}</p>
+        <i class="fa fa-quote-right"></i>
+    </div>
+</div>

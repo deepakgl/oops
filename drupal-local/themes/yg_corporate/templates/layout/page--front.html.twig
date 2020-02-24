@@ -1,0 +1,73 @@
+
+<div class="main-menu-area" id="main-menu">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-white site-navigation navbar-togglable">
+          {{page.logo}}
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+          </button>
+          {{page.primary_menu}}
+      </nav>
+  </div>
+</div>
+<!-- End NavBar -->
+{% set url = url('<current>') %}
+{% if 'user' in url|render|render %}     
+  <section class="section page-title bg-fixed bg-cover" style="background-image: url({{banner_image}});">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6">
+        <div class="service-banner">
+          <h1>{{page['#title']}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+{{page.content}}
+
+<!-- Start Footer Section  -->
+<footer class="footer">
+  <div class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 m-15px-tb col-md-6">
+          <div class="footer-content">
+            {{page.footer_col_1}}
+            <ul class="social-icons">
+              <li><a href="{{facebook}}"><i class="fa fa-facebook-f"></i></a></li>
+              <li><a href="{{twitter}}"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="{{instagram}}"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="{{codepen}}"><i class="fa fa-codepen"></i></a></li>
+              <li><a href="{{github}}"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="{{skype}}"><i class="fa fa-skype"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 m-15px-tb col-md-6">
+          <div class="footer-content">
+              {{page.footer_col_2}}
+          </div>
+        </div>
+        <div class="col-lg-2 m-15px-tb col-md-6">
+          <div class="footer-content">
+              {{page.footer_col_3}}
+            </div>
+        </div>
+        <div class="col-lg-4 m-15px-tb col-md-6">
+          <div class="footer-newsletter">
+            {{page.footer_col_4}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fot-copyright">
+      <div class="col-md-6 mx-auto text-center wow fadeInDown" data-wow-delay="0.3s">
+        <p>© 2018 <span><a href="#">YG Corporate</a></span>. All Rights Reserved. </p>
+        <p>Theme By<a href="https://www.drupaldevelopersstudio.com/" target="_blank"> Drupal Developers Studio</a>, A Division of <a href="https://www.youngglobes.com/" target="_blank">Young Globes</a></p>
+      </div>  
+  </div>
+</footer>
+<!-- End Footer Section  -->

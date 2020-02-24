@@ -1,0 +1,18 @@
+{{content.field_banner}}
+<!-- PORTFOLIO SECTION -->  
+<section class="portfolio-single-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="portfolio-single-col">
+                    <div class="portfolio-single-img">
+                        <img src="{{file_url(node.field_image.entity.uri.value)}}" alt="project detail banner">
+                    </div>
+                    <h2>{{ node.title.value }}</h2>
+                    {{ content.body }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  END PORTFOLIO SECTION -->
